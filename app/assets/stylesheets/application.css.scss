@@ -45,7 +45,24 @@
 //Change logo font
 .navbar-brand {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+//Change Mobile Navbar toggle
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  & .icon-bar{
+    background-color: white;
+  }
+  &:focus, &:hover{
+    background-color: #c43333;
+    opacity: 0.95;
+  }
+}
+//Horizontal line
+.navbar-default .navbar-collapse {
+  border-color: white;
+  border-top: 2px solid white;
 }
 
 //Navbar Styles
