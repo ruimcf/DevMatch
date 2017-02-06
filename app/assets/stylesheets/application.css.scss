@@ -16,41 +16,52 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+
+// Gradient Backgrounf, source: https://uigradients.com/#RoseWater 
 .navbar, .home-callout {
-  /* source https://uigradients.com/#RoseWater */
-  background: #0099F7; /* fallback for old browsers */
+  background: #0099F7; // fallback for old browsers 
   background: -webkit-linear-gradient(to left, #0099F7 , #F11712); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #0099F7 , #F11712); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
+//Home title position fix, padding also effects the gradient background size
 .home-callout {
   color: white;
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 100px;
+  border-radius: 0 0 80% 80%;
 }
 
+
+//Navbar border remove (messing with background)
 .navbar {
   border: none;
 }
 
+
+//Navbar Styles
 .navbar-default .navbar-nav > li > a {
   color: white;
+  &:hover{
+    color: red;
+    opacity: 0.75;
+  }
 }
 
+
+//Navbar Styles
 .navbar-default .navbar-brand {
   color: white;
+  &:hover{
+    color: cyan;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-  color: red;
-  opacity: 0.75;
-}
 
-.navbar-default .navbar-brand:hover {
-  color: cyan;
-  opacity: 0.75;
-}
+// Typography styles
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
