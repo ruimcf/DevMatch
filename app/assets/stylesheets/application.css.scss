@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+// Gradient Backgrounf, source: https://uigradients.com/#RoseWater 
+.navbar, .home-callout {
+  background: #0099F7; // fallback for old browsers 
+  background: -webkit-linear-gradient(to left, #0099F7 , #F11712); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0099F7 , #F11712); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+//Home title position fix, padding also effects the gradient background size
+.home-callout {
+  color: white;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  border-radius: 0 0 80% 80%;
+}
+
+
+//Navbar border remove (messing with background)
+.navbar {
+  border: none;
+}
+
+//Change logo font
+.navbar-brand {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+//Change Mobile Navbar toggle
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  & .icon-bar{
+    background-color: white;
+  }
+  &:focus, &:hover{
+    background-color: #c43333;
+    opacity: 0.95;
+  }
+}
+//Horizontal line
+.navbar-default .navbar-collapse {
+  border-color: white;
+  border-top: 2px solid white;
+}
+
+//Navbar Styles
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  &:hover{
+    color: red;
+    opacity: 0.75;
+  }
+}
+
+
+//Navbar Styles
+.navbar-default .navbar-brand {
+  color: white;
+  &:hover{
+    color: cyan;
+    opacity: 0.75;
+  }
+}
+
+
+// Typography styles
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+}
