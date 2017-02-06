@@ -17,6 +17,7 @@
 @import 'bootstrap';
 
 .navbar, .home-callout {
+  /* source https://uigradients.com/#RoseWater */
   background: #0099F7; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #0099F7 , #F11712); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #0099F7 , #F11712); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -33,6 +34,23 @@
   border: none;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: red;
+  opacity: 0.75;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: cyan;
+  opacity: 0.75;
+}
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
