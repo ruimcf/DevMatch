@@ -2,7 +2,11 @@
   <div class="row">
     <div class="col-xs-4 col-xs-offset-4">
       <div class="well">
-        <h2>Sign up</h2>
+        <% if params[:plan] == '2' %>
+          <h2>Pro Account Sign Up</h2>
+        <% else %>
+          <h2> Basic Sign up</h2>
+        <% end %>
 
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= devise_error_messages! %>
